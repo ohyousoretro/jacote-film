@@ -38,6 +38,7 @@
 		"decap-server": "^3.10.0",
 		"esbuild": "^0.28.2",
 		"glob": "^13.0.6",
+		"joi": "^18.2.8",
 		"less": "^4.9.0",
 		"netlify-plugin-cache": "^1.0.3",
 		"npm-run-all2": "^5.0.2",
