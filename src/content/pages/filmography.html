@@ -1,0 +1,93 @@
+---
+title: "Filmography | Jacote Film | Detroit Video Production Company"
+description: "Meta description for the page"
+permalink: "/filmography/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/filmography.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--             Upcoming Projects                -->
+<!-- ============================================ -->
+
+<section id="upcomingprojects">
+    <div class="cs-container-title">        
+        <h2>
+            UPCOMING PROJECTS
+        </h2>
+    </div>
+
+    <!-- The Plant on Strike -->
+    <div class="cs-container">
+        <!-- Left Content Section-->
+        <div class="cs-content">
+            <h2 class="cs-title">The Plant: On Strike</h2>
+            <p class="cs-text">
+                At The Plant, no one takes the job too seriously. From hilarious on-the-clock antics to after-hour drama, it's all fun and games until the boss shows up, or the Machine breaks down. Whether it's dodging supervisors, pulling pranks, or navigating wild workplace romances, Co-workers who act like family, argue like enemies, flirt like lovers, and joke like best friends.
+            </p>
+            <p class="cs-text">
+                <strong>Director:</strong> Kenyon "Jigsaw" Pruitt<br />
+                <br />
+                <strong>Writers:</strong>  Armond Atkins, Nika Donshe, Maurice Farr<br />
+                <br />
+                <strong>Cast:</strong> Will F. Allen, Armond Atkins, Kehende Blue<br />
+            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="">Wishlist Now</a>
+        </div>
+        <!-- Right Image Section -->
+        <div class="cs-image-group">
+            <!--Floating Box-->
+            <!--Image-->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/the-plant-on-strike.png">
+                <source media="(min-width: 601px)" srcset="/assets/images/the-plant-on-strike.png">
+                <img loading="lazy" decoding="async" src="/assets/images/the-plant-on-strike.png" alt="The Plant on Strike" height="630" aria-hidden="true">
+            </picture>
+        </div>
+    </div>
+
+
+    <div class="divider-container">
+        <hr class="divider">
+    </div>
+
+
+    <!-- Black Trojan -->
+    <div class="cs-container">
+        <!-- Left Content Section-->
+        <div class="cs-content">
+            <h2 class="cs-title">Black Trojan</h2>
+            <p class="cs-text">
+                Detroit becomes a war zone as rival crews collide. With dirty cops and betrayal at every turn, loyalty is dead and money is everything.
+            </p>
+            <p class="cs-text">
+                <strong>Director:</strong> Kenyon "Jigsaw" Pruitt<br />
+                <br />
+                <strong>Writers:</strong> Kross Coats<br />
+                <br />
+                <strong>Cast:</strong>Aaron Reign Bennett, Kacee Bridgewater, Kross Coats<br />
+            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="">Wishlist Now</a>
+        </div>
+        <!-- Right Image Section -->
+        <div class="cs-image-group">
+            <!--Floating Box-->
+            <!--Image-->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/Black-Trojan.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/Black-Trojan.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/Black-Trojan.jpg" alt="The Plant on Strike" height="630" aria-hidden="true">
+            </picture>
+        </div>
+    </div>
+</section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
