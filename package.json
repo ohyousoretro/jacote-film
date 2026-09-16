@@ -36,6 +36,7 @@
 		"cross-env": "^10.1.0",
 		"cssnano": "^7.1.9",
 		"decap-server": "^3.10.0",
+		"eleventy-plugin-embed-everything": "^1.21.2",
 		"esbuild": "^0.28.2",
 		"glob": "^13.0.6",
 		"joi": "^18.2.8",
