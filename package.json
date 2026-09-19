@@ -41,6 +41,7 @@
 		"glob": "^13.0.6",
 		"joi": "^18.2.8",
 		"less": "^4.9.0",
+		"lity": "^2.4.1",
 		"netlify-plugin-cache": "^1.0.3",
 		"npm-run-all2": "^5.0.2",
 		"postcss": "^8.5.26"
