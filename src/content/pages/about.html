@@ -14,94 +14,174 @@ permalink: "/about/"
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--             About Us                         -->
+<!-- ============================================ -->
 
-    <div id="banner-310">
-        <div class="cs-container">
-            <span class="cs-int-title">About Us</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/about/" class="cs-link cs-active">About Us</a>
-            </div>
+<section id="hero-1785">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">About Us</h1>
+            <p class="cs-text">
+                
+            </p>
         </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
-        </picture>
     </div>
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/about-banner.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/about-banner.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/about-banner.jpg" alt="filmography" width="1920" height="1200" aria-hidden="true">
+    </picture>
+    <div class="hero-border"></div>
+</section>
 
-    <section id="RPsbs-313">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" decoding="async">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
+<!-- ============================================ -->
+<!--                About Header                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1813">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Main Image-->
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/about-top.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/about-top.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/about-top.jpg" alt="body builder" width="700" height="666">
+            </picture>
+            <!--White SVG Mask. Download the image and change the fill color to match the color of the section background below it-->
+            <img class="cs-mask cs-light" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-paint-stroke.svg" alt="white splatter" width="700" height="666">
+            <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+            <img class="cs-mask cs-dark" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-paint-stroke.svg" alt="white splatter" width="700" height="666">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">This is Our Story</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec venenatis sem, id iaculis diam. Quisque condimentum semper quam. Vestibulum ligula elit, faucibus eget pretium vel, volutpat sed lorem. Mauris leo urna, bibendum non blandit feugiat, condimentum vitae dui. Praesent lectus sapien, finibus ut consequat vitae, mollis quis nisl. Donec egestas euismod felis, sed pretium nulla euismod pellentesque. In eu urna non eros lacinia vulputate. Donec volutpat semper luctus. Aliquam elit erat, suscipit nec dui sit amet, volutpat ultricies augue. Morbi fermentum orci at mi ultricies, ac efficitur massa pellentesque. Donec lobortis pharetra erat eget lacinia.
+            </p>
+            <p class="cs-text">
+                Phasellus sem diam, porta eu mollis eget, accumsan ut leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean fringilla, metus vel ultrices facilisis, enim neque porttitor purus, non faucibus est ipsum congue ante. Mauris lobortis malesuada purus, ut posuere ligula lacinia sit amet. Integer id auctor nunc. Nulla viverra tincidunt pellentesque. Suspendisse molestie vestibulum fermentum. Praesent malesuada molestie dolor eget elementum. Ut eu imperdiet diam.
+            </p>
+        </div>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="about-1451">
+    <div class="cs-container">
+        <div class="cs-info">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/team/jig-bio.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/team/jig-bio.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/team/jig-bio.jpg" alt="person" width="522" height="696">
+            </picture>
             <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About CodeStitch</h2>
+                <span class="cs-header">Kenyon "Jigsaw" Pruitt</span>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    <em>Founder, Owner</em><br/>
+                    Director, Actor, Editor
                 </p>
-                <div class="cs-quote">
-                    <span class="cs-quote-text">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </span>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+                <p class="cs-text">
+                    Kenyon "Jigsaw" Pruitt (born August 4, 1971) is an American film director, producer, and actor. Kenyon first came to prominence as an actor, guest-starring in several music videos, He gained attention for Directing a local film about a corrupt police officer During this time, he also filmed commercials for local Judges and lawyers. He was credited as Kardell Kenyon Pruitt in his film/music video appearances. In 2015, Pruitt left music to focus on directing, producing, and occasionally writing a variety of films and television shows. His films included Hot Pack (2016), Ten Zero Zero (2015), and King of the Streets (2018) as well as Detroit 80's (2019), the police drama Surveillance (2020), Karma (2018), A Little Girls Cry (2018), The Last Drink (2019) The romantic drama short Yasmine Hearns (2021) as well as the award-winning series The Plant (2021)
+                </p>
             </div>
         </div>
-    </section>
+        <div class="cs-info">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/team/kacee.png">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/team/kacee.png">
+                <img loading="lazy" decoding="async" src="/assets/images/team/kacee.png" alt="person" width="522" height="696">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-header">Kacee "36" Bridgewater</span>
+                <p class="cs-text">
+                    Title Here
+                </p>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum rutrum libero, in congue ante tincidunt at. Aliquam erat volutpat. Cras justo erat, ultricies sit amet dolor volutpat, lobortis lacinia massa. In facilisis dui lorem, et convallis nunc accumsan et. Vestibulum vulputate euismod efficitur. Etiam non lectus in velit dignissim porttitor. Etiam tellus lorem, porta ac tristique nec, mollis eget purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum in semper nunc. Pellentesque lobortis auctor sem, ac placerat purus. Etiam rhoncus velit quis tortor lacinia molestie. Vestibulum eget diam et risus mattis viverra non eget risus. Cras sodales ac est a semper. Nam eros tellus, hendrerit egestas purus ac, laoreet bibendum velit. Nam finibus molestie ornare.
+                </p>
+                <p class="cs-text">
+                    Nullam a neque elementum, aliquet lectus nec, interdum dolor. Sed nunc dui, gravida ut lorem nec, feugiat malesuada ligula. Aenean eros odio, ornare dictum scelerisque sed, bibendum ut felis. Curabitur finibus massa et lectus tristique cursus. Aenean nec erat nisi. Vestibulum ac quam eget elit bibendum placerat ac non sem. Curabitur lacus massa, consequat eget quam scelerisque, scelerisque dignissim ipsum.
+                </p>
+            </div>
+        </div>
+        <div class="cs-info">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/team/goldie.png">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/team/goldie.png">
+                <img loading="lazy" decoding="async" src="/assets/images/team/goldie.png" alt="person" width="522" height="696">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-header">Donissa "Goldie" Stewart</span>
+                <p class="cs-text">
+                    Title Here
+                </p>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum rutrum libero, in congue ante tincidunt at. Aliquam erat volutpat. Cras justo erat, ultricies sit amet dolor volutpat, lobortis lacinia massa. In facilisis dui lorem, et convallis nunc accumsan et. Vestibulum vulputate euismod efficitur. Etiam non lectus in velit dignissim porttitor. Etiam tellus lorem, porta ac tristique nec, mollis eget purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum in semper nunc. Pellentesque lobortis auctor sem, ac placerat purus. Etiam rhoncus velit quis tortor lacinia molestie. Vestibulum eget diam et risus mattis viverra non eget risus. Cras sodales ac est a semper. Nam eros tellus, hendrerit egestas purus ac, laoreet bibendum velit. Nam finibus molestie ornare.
+                </p>
+                <p class="cs-text">
+                    Nullam a neque elementum, aliquet lectus nec, interdum dolor. Sed nunc dui, gravida ut lorem nec, feugiat malesuada ligula. Aenean eros odio, ornare dictum scelerisque sed, bibendum ut felis. Curabitur finibus massa et lectus tristique cursus. Aenean nec erat nisi. Vestibulum ac quam eget elit bibendum placerat ac non sem. Curabitur lacus massa, consequat eget quam scelerisque, scelerisque dignissim ipsum.
+                </p>
+            </div>
+        </div>
+        <div class="cs-info">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/team/unclep.png">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/team/unclep.png">
+                <img loading="lazy" decoding="async" src="/assets/images/team/unclep.png" alt="person" width="522" height="696">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-header">Diarra "Uncle P" Collazo</span>
+                <p class="cs-text">
+                    Title Here
+                </p>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum rutrum libero, in congue ante tincidunt at. Aliquam erat volutpat. Cras justo erat, ultricies sit amet dolor volutpat, lobortis lacinia massa. In facilisis dui lorem, et convallis nunc accumsan et. Vestibulum vulputate euismod efficitur. Etiam non lectus in velit dignissim porttitor. Etiam tellus lorem, porta ac tristique nec, mollis eget purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum in semper nunc. Pellentesque lobortis auctor sem, ac placerat purus. Etiam rhoncus velit quis tortor lacinia molestie. Vestibulum eget diam et risus mattis viverra non eget risus. Cras sodales ac est a semper. Nam eros tellus, hendrerit egestas purus ac, laoreet bibendum velit. Nam finibus molestie ornare.
+                </p>
+                <p class="cs-text">
+                    Nullam a neque elementum, aliquet lectus nec, interdum dolor. Sed nunc dui, gravida ut lorem nec, feugiat malesuada ligula. Aenean eros odio, ornare dictum scelerisque sed, bibendum ut felis. Curabitur finibus massa et lectus tristique cursus. Aenean nec erat nisi. Vestibulum ac quam eget elit bibendum placerat ac non sem. Curabitur lacus massa, consequat eget quam scelerisque, scelerisque dignissim ipsum.
+                </p>
+            </div>
+        </div>
+        <div class="cs-info">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/team/nika.png">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/team/nika.png">
+                <img loading="lazy" decoding="async" src="/assets/images/team/nika.png" alt="person" width="522" height="696">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-header">Nika Donshe</span>
+                <p class="cs-text">
+                    Title Here
+                </p>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum rutrum libero, in congue ante tincidunt at. Aliquam erat volutpat. Cras justo erat, ultricies sit amet dolor volutpat, lobortis lacinia massa. In facilisis dui lorem, et convallis nunc accumsan et. Vestibulum vulputate euismod efficitur. Etiam non lectus in velit dignissim porttitor. Etiam tellus lorem, porta ac tristique nec, mollis eget purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum in semper nunc. Pellentesque lobortis auctor sem, ac placerat purus. Etiam rhoncus velit quis tortor lacinia molestie. Vestibulum eget diam et risus mattis viverra non eget risus. Cras sodales ac est a semper. Nam eros tellus, hendrerit egestas purus ac, laoreet bibendum velit. Nam finibus molestie ornare.
+                </p>
+                <p class="cs-text">
+                    Nullam a neque elementum, aliquet lectus nec, interdum dolor. Sed nunc dui, gravida ut lorem nec, feugiat malesuada ligula. Aenean eros odio, ornare dictum scelerisque sed, bibendum ut felis. Curabitur finibus massa et lectus tristique cursus. Aenean nec erat nisi. Vestibulum ac quam eget elit bibendum placerat ac non sem. Curabitur lacus massa, consequat eget quam scelerisque, scelerisque dignissim ipsum.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+                                
 
     {% include 'sections/cta.html' %}
 
