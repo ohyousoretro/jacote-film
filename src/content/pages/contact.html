@@ -1,5 +1,5 @@
 ---
-title: "Contact | Code Stitch Web Designs"
+title: "Contact | Jacote Film"
 description: "Meta description for the page"
 permalink: "/contact/"
 ---
@@ -10,39 +10,31 @@ permalink: "/contact/"
     <link rel="stylesheet" href="/assets/css/contact.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
     <link rel="preload" as="image" href="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | avif %}"/>
+    <script defer src="/assets/js/faq.js"></script>
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--             CC  Hero                         -->
+<!-- ============================================ -->
 
-    <div id="banner-310">
-        <div class="cs-container">
-            <span class="cs-int-title">Contact Us</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/contact/" class="cs-link cs-active">Contact Us</a>
-            </div>
+<section id="hero-1785">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Contact Us</h1>
         </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
-        </picture>
     </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/contact-hero.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/contact-hero.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/contact-hero.jpg" alt="filmography" width="1920" height="1200" aria-hidden="true">
+    </picture>
+    <div class="hero-border"></div>
+</section>
+
 
     <!-- ============================================ -->
     <!--                Contact Form                  -->
@@ -58,10 +50,14 @@ permalink: "/contact/"
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
                     </p>
                 </div>
-                <form id="cs-form-265" name="Contact Form" method="post">
+                <form id="cs-form-265" name="Contact Form" method="post" netlify>
                     <label>
-                        Name
-                        <input required type="text" id="name-265" name="name" placeholder="Name">
+                        First Name
+                        <input required type="text" id="name-265" name="name" placeholder="First Name">
+                    </label>
+                    <label>
+                        Last Name
+                        <input required type="text" id="name-265" name="name" placeholder="Last Name">
                     </label>
                     <label>
                         Email
@@ -72,47 +68,96 @@ permalink: "/contact/"
                         <input required type="text" id="phone-265" name="phone" placeholder="Phone">
                     </label>
                     <label>
+                        Website
+                        <input required type="text" id="email-265" name="email" placeholder="Website">
+                    </label>
+                    <label>
                         How Did You Find Us
                         <input type="text" id="find-265" name="find-us" placeholder="How did you find us?">
                     </label>
+                    <label>
+                    What's Your Budget?
+                        <select class="cs-input cs-select" required id="position-2061" name="Position">
+                            <option value="" disabled selected>Please Choose</option>
+                            <option value="$1,000 - $10,000">$1,000 - $10,000</option>
+                            <option value="$10,001 - $25,000">$10,001 - $25,000</option>
+                            <option value="$25,001 - $50,000">$25,001 - $50,000</option>
+                            <option value="$50,001 - $100,000">$50,001 - $100,000</option>
+                            <option value="$100,001+">$100,001+</option>
+                            <option value="Unknown">Unknown</option>
+                        </select>
+                    </label>
                     <label class="cs-label-message">
-                        Message
-                        <textarea required name="Message" id="message-265" placeholder="Write message..."></textarea>
+                        How can we help?
+                        <textarea required name="Message" id="message-265" placeholder="Please share the vision of your project. The more details you can include, the better we will understand your goals and objectives."></textarea>
                     </label>
                     <button class="cs-button-solid cs-submit" type="submit">Submit Message</button>
                 </form>
             </div>
             <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{ client.address.mapLink }}">
-                    {{ client.address.lineOne }}, <br>
-                    {{ client.address.lineTwo }}, <br>
-                    {{ client.address.city }}, {{ client.address.state }}
-                    {{ client.address.zip }}
-                </a>
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 820, height: 1372 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 820, height: 1372 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 820, height: 1372 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1084, height: 1156 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1084, height: 1156 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1084, height: 1156 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 1084, height: 1156 }) | jpeg %}" alt="building" width="542" height="578" decoding="async">
-                </picture>
+
+    <div class="cs-container">
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            I have an existing agency that we use, do you collaborate with other agencies as well?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we do. At the end of the day, our goal is to help our clients any way we can. We love working with other creatives to provide the best possible experience and outcomes for our clients.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What Is Your Typical Turnaround Time?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Depending on the project’s complexity, our standard first cut will be delivered 3-4 weeks after the last production day.<br />
+                        <br />
+                        From there, our clients will have two rounds of revisions to submit any remaining feedback before we finalize the project. If you need the final video sooner than 3-4 weeks, we can accommodate upon request.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Does Your Team Travel for Projects?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes. We love to travel anywhere our clients need us, across the U.S. and internationally. Although we are based in Detroit, our team has traveled from coast to coast for our clients. Just let us know where you need us.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How Much Does a Video Cost?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Each project is based on several important factors. Our cost directly reflects the amount of work involved, from pre-production to post-production. During our briefing call, the more detail you can provide us about the project, the more accurately we can give an estimated cost.<br />
+                        <br />
+                        If you have never worked with a professional video agency, just let us know and we will guide you through the process.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can We Hire Your Team To Capture Content Without Editing?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Of course. At the end of the day, we are an extension of your team. We can capture photo and video content of your project and package it up for your team on a hard-drive.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
             </div>
         </div>
     </section>
