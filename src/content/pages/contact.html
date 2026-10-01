@@ -44,13 +44,12 @@ permalink: "/contact/"
         <div class="cs-container">
             <div class="cs-left-section">
                 <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
+                    <h2 class="cs-title">Let's Make <em>Something</em></h2>
                     <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                        Whether you have a fully developed concept or just a feeling — reach out. We respond to every serious inquiry within 48 hours.
                     </p>
                 </div>
-                <form id="cs-form-265" name="Contact Form" method="post" netlify>
+                <form id="cs-form-265" name="Contact Form" method="post" data-netlify-recaptcha="true" netlify>
                     <label>
                         First Name
                         <input required type="text" id="name-265" name="name" placeholder="First Name">
@@ -91,6 +90,7 @@ permalink: "/contact/"
                         How can we help?
                         <textarea required name="Message" id="message-265" placeholder="Please share the vision of your project. The more details you can include, the better we will understand your goals and objectives."></textarea>
                     </label>
+                    <div data-netlify-recaptcha="true"></div>
                     <button class="cs-button-solid cs-submit" type="submit">Submit Message</button>
                 </form>
             </div>
